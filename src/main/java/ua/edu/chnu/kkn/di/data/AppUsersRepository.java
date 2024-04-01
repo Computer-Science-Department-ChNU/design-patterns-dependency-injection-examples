@@ -1,5 +1,6 @@
 package ua.edu.chnu.kkn.di.data;
 
+import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +12,7 @@ public class AppUsersRepository implements UsersRepository {
 
     private final NetworkDataSource networkDataSource;
 
+    @Inject
     public AppUsersRepository(
             FileDataSource fileDataSource,
             DatabaseDataSource databaseDataSource,

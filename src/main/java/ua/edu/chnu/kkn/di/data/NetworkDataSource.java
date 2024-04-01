@@ -1,5 +1,6 @@
 package ua.edu.chnu.kkn.di.data;
 
+import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -10,6 +11,7 @@ public class NetworkDataSource {
 
     private final HttpClient httpClient;
 
+    @Inject
     public NetworkDataSource(
             JsonConverter jsonConverter,
             HttpClient httpClient) {

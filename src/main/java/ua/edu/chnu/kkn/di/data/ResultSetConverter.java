@@ -1,9 +1,14 @@
 package ua.edu.chnu.kkn.di.data;
 
+import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ResultSetConverter {
+
+    @Inject
+    public ResultSetConverter() {
+    }
 
     public List<User> toUserList(ResultSet resultSet) {
         System.out.println("Converting result set to list of users...");

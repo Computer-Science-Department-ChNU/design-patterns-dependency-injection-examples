@@ -1,5 +1,6 @@
 package ua.edu.chnu.kkn.di.data;
 
+import javax.inject.Inject;
 import java.util.List;
 import java.util.Optional;
 
@@ -9,6 +10,7 @@ public class DatabaseDataSource {
 
     private final ResultSetConverter resultSetConverter;
 
+    @Inject
     public DatabaseDataSource(
             Database dataBase,
             ResultSetConverter resultSetConverter

@@ -1,5 +1,7 @@
 package ua.edu.chnu.kkn.di.data;
 
+import javax.inject.Inject;
+import javax.inject.Named;
 import java.util.Arrays;
 import java.util.Optional;
 
@@ -7,7 +9,8 @@ public class HttpClient {
 
     private final String baseUrl;
 
-    public HttpClient(String baseUrl) {
+    @Inject
+    public HttpClient(@Named("baseUrl") String baseUrl) {
         this.baseUrl = baseUrl;
     }
 

@@ -1,9 +1,14 @@
 package ua.edu.chnu.kkn.di.data;
 
+import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
 
 public class JsonConverter {
+
+    @Inject
+    public JsonConverter() {
+    }
 
     public List<User> parseUsers(String httpResponse) {
         System.out.println("Parsing all users GET request...");
